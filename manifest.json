@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "Robot inspiration everywhere",
   "manifest_version": 3,
-  "permissions": [],
+  "permissions": [
+    "storage"
+  ],
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -21,5 +23,15 @@
       "css": ["content.css"],
       "js": ["content.js"]
     }
-  ]
+  ],
+  "commands": {
+    "ask-gpt": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Period",
+        "mac": "Command+Shift+Period",
+        "linux": "Ctrl+Shift+Period"
+      },
+      "description": "Ask GPT to respond to the text in the current input"
+    }
+  }
 }
