@@ -1,4 +1,4 @@
-# Inspo GOPT
+# Inspo GPT
 
 A chrome extension that let's you use ChatGPT on any webpage.
 
@@ -27,6 +27,8 @@ Have fun!
 ### GMail
 
 The extension works well on GMail, give it a shot.
+
+https://dl.dropbox.com/s/dvu5371alt15lwo/inspogpt-gmail.mp4
 
 ### Twitter
 
