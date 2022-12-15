@@ -30,12 +30,19 @@ Have fun!
 
 - ✅ GMail
 - ✅ Twitter
-- ⛔ [Twitter](#twitter)
+- ✅ Instagram
+- ✅ Wordpress
+- ✅ Coda
 
 
 ## Known issues
 
 ### ⛔ Google Docs
-Google Docs uses a weird DOM with nested canvases and other trickery so it doesn't seem to work.
+Google Docs uses a weird DOM with nested canvases and other trickery so it doesn't seem to work - I'm sure I'll figure it out when I have the time
 
 > Workaround: When the prompt returns, the response is in the clipboard so just paste into the document with `cmd` + `v`...
+
+### ⛔ Notion.so
+Notion seems to be doing some aggressive keypress and click hijacking and it interferes with the extension's handlers
+
+> Workaround: TBD
