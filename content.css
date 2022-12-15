@@ -1,0 +1,193 @@
+#inspogpt-widget {
+    all: unset;
+    display: none;
+
+    position: fixed;
+    z-index: 999999999;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: transparent;
+}
+
+#inspogpt-widget-box {
+    all: unset;
+    position: absolute;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+    width: 70%;
+    max-width: 1000px;
+    min-width: 300px;
+
+    min-height: 24px;
+    max-height: 200px;
+
+    background-color: white;
+    overflow-y: none;
+
+    padding: 12px;
+
+    border-width: 1px;
+    border-radius: 0.375rem;
+    border-color: rgba(0, 0, 0, .1);
+
+    outline-color: transparent;
+
+    box-shadow: 0 0 10000px 10000px rgba(0, 0, 0, 0.25), 0 0 10px 5px rgba(136, 136, 136, 0.25);
+}
+
+#inspogpt-widget-box.top {
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#inspogpt-widget-box.center {
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#inspogpt-widget-box.bottom {
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#inspogpt-widget-input {
+    all: unset;
+
+    flex: 1;
+
+    font-family: Söhne, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+    height: 24px;
+    min-height: 24px;
+    max-height: 176px;
+    width: 100%;
+
+    resize: none;
+    border: none;
+    background-color: transparent;
+}
+
+#inspogpt-widget-input:focus {
+    border: none;
+    outline-color: transparent;
+}
+
+#inspogpt-widget-button {
+    all: unset;
+
+    display: none;
+
+    background-color: white;
+    border: none;
+    border-radius: 0.375rem;
+
+    width: 24px;
+    height: 24px;
+
+    margin-left: 12px;
+}
+#inspogpt-widget-button.visible {
+    display: block;
+}
+#inspogpt-widget-button:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+}
+#inspogpt-widget-button:focus-visible{
+    background-color: #e3e3e3;
+}
+
+#inspogpt-temp{
+    position: fixed;
+    top: -100px;
+    max-height: 50px;
+}
+
+.is-open {
+    display: block !important;
+}
+
+
+#inspogpt-submit{
+    stroke-width: 0;
+    fill: rgb(142, 142, 160);
+    transform: rotate(90deg);
+    width: 20px;
+    height: 20px;
+}
+
+/**
+ * ==============================================
+ * Spinner
+ * ==============================================
+ */
+ .dot-flashing {
+    display: none;
+    position: relative;
+    top: -6px;
+    left: -12px;
+    width: 10px;
+    height: 10px;
+    margin-left: 30px;
+    border-radius: 5px;
+    background-color: rgba(125, 125, 125, 0.8);
+    color: rgba(125, 125, 125, 0.8);
+    animation: dot-flashing 1s infinite linear alternate;
+    animation-delay: 0.5s;
+    transform: scale(0.6) translate(50%, 0);
+  }
+  .dot-flashing.visible {
+    display: block;
+  }
+  .dot-flashing::before, .dot-flashing::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+  }
+  .dot-flashing::before {
+    left: -15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgba(125, 125, 125, 0.8);
+    color: rgba(125, 125, 125, 0.8);
+    animation: dot-flashing 1s infinite alternate;
+    animation-delay: 0s;
+  }
+  .dot-flashing::after {
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgba(125, 125, 125, 0.8);
+    color: rgba(125, 125, 125, 0.8);
+    animation: dot-flashing 1s infinite alternate;
+    animation-delay: 1s;
+  }
+  
+  @keyframes dot-flashing {
+    0% {
+      background-color: rgba(125, 125, 125, 0.8);
+    }
+    50%, 100% {
+      background-color: rgba(125, 125, 125, 0.2);
+    }
+  }
+
+
+
+  
